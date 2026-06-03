@@ -91,7 +91,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center justify-center bg-[#050508] overflow-hidden px-6 py-12 md:py-24">
+    <div className="relative min-h-screen w-full flex flex-col items-center justify-center bg-[#050508] overflow-hidden px-6 pt-24 pb-12 lg:pt-32 lg:pb-24">
       {/* 
         Slow-Moving hardware-accelerated aurora background circles. 
         Adjusted to blur-[100px] and 0.15 opacity for an ethereal, premium feel.
@@ -271,61 +271,61 @@ export default function Hero() {
                         {/* Left Node */}
                         <Link
                           href={`/meaning/${nodes.left}/soul`}
-                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-colors"
+                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/5 hover:border-white/10 transition-all duration-300"
                         >
                           <div className="flex flex-col">
                             <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold">Soul / Inner</span>
                             <span className="text-white font-serif font-medium text-sm">Arcana {nodes.left}</span>
                           </div>
-                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Read Analysis &rarr;</span>
+                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">Explore Channel &rarr;</span>
                         </Link>
 
                         {/* Top Node */}
                         <Link
                           href={`/meaning/${nodes.top}/spiritual`}
-                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-colors"
+                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/5 hover:border-white/10 transition-all duration-300"
                         >
                           <div className="flex flex-col">
                             <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold">Spiritual / Divine</span>
                             <span className="text-white font-serif font-medium text-sm">Arcana {nodes.top}</span>
                           </div>
-                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Read Analysis &rarr;</span>
+                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">Explore Channel &rarr;</span>
                         </Link>
 
                         {/* Right Node */}
                         <Link
                           href={`/meaning/${nodes.right}/material`}
-                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-colors"
+                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/5 hover:border-white/10 transition-all duration-300"
                         >
                           <div className="flex flex-col">
                             <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold">Material / Money</span>
                             <span className="text-white font-serif font-medium text-sm">Arcana {nodes.right}</span>
                           </div>
-                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Read Analysis &rarr;</span>
+                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">Explore Channel &rarr;</span>
                         </Link>
 
                         {/* Bottom Node */}
                         <Link
                           href={`/meaning/${nodes.bottom}/karma`}
-                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-colors"
+                          className="group flex items-center justify-between p-3 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/5 hover:border-white/10 transition-all duration-300"
                         >
                           <div className="flex flex-col">
                             <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold">Karma / Lessons</span>
                             <span className="text-white font-serif font-medium text-sm">Arcana {nodes.bottom}</span>
                           </div>
-                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Read Analysis &rarr;</span>
+                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">Explore Channel &rarr;</span>
                         </Link>
 
                         {/* Center Node */}
                         <Link
                           href={`/meaning/${nodes.center}/comfort`}
-                          className="group flex items-center justify-between p-3 rounded-xl border border-purple-500/10 bg-purple-500/[0.02] hover:bg-purple-500/[0.04] transition-colors"
+                          className="group flex items-center justify-between p-3 rounded-xl border border-purple-500/10 bg-purple-500/[0.02] hover:bg-white/5 hover:border-purple-500/20 transition-all duration-300"
                         >
                           <div className="flex flex-col">
                             <span className="text-[10px] text-purple-400 uppercase tracking-wider font-semibold">Comfort Zone (Core)</span>
                             <span className="text-purple-300 font-serif font-medium text-sm">Arcana {nodes.center}</span>
                           </div>
-                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Read Analysis &rarr;</span>
+                          <span className="text-[10px] text-purple-400 font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">Explore Channel &rarr;</span>
                         </Link>
                       </div>
 
