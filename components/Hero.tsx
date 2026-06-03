@@ -349,7 +349,11 @@ export default function Hero() {
       </div>
 
       {/* Live Seekers Ticker (Infinite horizontal marquee) */}
-      <div className="hidden sm:flex w-full overflow-hidden select-none whitespace-nowrap mt-16 md:mt-24 border-t border-b border-white/5 py-4 bg-white/[0.01] backdrop-blur-sm">
+      <motion.div 
+        className="hidden sm:flex my-12 py-6 w-full overflow-hidden relative border-y border-purple-500/10 bg-black/20 select-none cursor-pointer"
+        whileHover={{ scale: 1.01 }}
+        transition={{ duration: 0.3 }}
+      >
         <motion.div
           animate={{ x: [0, -1000] }}
           transition={{
@@ -361,25 +365,26 @@ export default function Hero() {
           className="flex whitespace-nowrap"
         >
           {[
-            '🔮 Seeker in Berlin just unlocked Arcana 10',
-            '✨ Arcana 22 transition advice updated 4m ago',
-            '💫 New compatibility map calculated from London',
-            '🔮 Seeker in Berlin just unlocked Arcana 10',
-            '✨ Arcana 22 transition advice updated 4m ago',
-            '💫 New compatibility map calculated from London',
-            '🔮 Seeker in Berlin just unlocked Arcana 10',
-            '✨ Arcana 22 transition advice updated 4m ago',
-            '💫 New compatibility map calculated from London'
+            { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
+            { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
+            { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> },
+            { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
+            { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
+            { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> },
+            { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
+            { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
+            { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> }
           ].map((item, idx) => (
-            <span
+            <div
               key={idx}
-              className="text-xs text-white/50 bg-white/5 border border-white/5 px-4 py-2 rounded-full backdrop-blur-md mx-2 inline-flex items-center gap-2"
+              className="inline-flex items-center gap-3 px-6 py-3 mx-4 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-lg shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] cursor-pointer transition-all duration-300 hover:border-purple-500/30 hover:bg-white/[0.06] group text-sm tracking-wide text-white/80"
             >
-              {item}
-            </span>
+              <span className="text-base">{item.icon}</span>
+              <span>{item.text}</span>
+            </div>
           ))}
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }
