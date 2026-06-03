@@ -18,21 +18,19 @@ export default function Navbar() {
           <Link href="/meaning/15" className="text-[10px] uppercase tracking-widest text-zinc-400 hover:text-white font-semibold transition-colors">
             Arcana Profiles
           </Link>
-          <Link href="/sitemap.xml" className="text-[10px] uppercase tracking-widest text-zinc-400 hover:text-white font-semibold transition-colors" target="_blank">
-            Sitemap
+          <Link href="/meaning/1" className="text-[10px] uppercase tracking-widest text-zinc-400 hover:text-white font-semibold transition-colors">
+            Arcana Library
           </Link>
         </nav>
 
-        {/* Right Side: GitHub repository button */}
+        {/* Right Side: High-contrast Get Premium button */}
         <div>
-          <a
-            href="https://github.com/sarwech-odho/MatrixPulse"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 border border-white/10 hover:border-purple-500/30 rounded-full text-[10px] uppercase tracking-widest font-semibold text-zinc-300 hover:text-white hover:bg-purple-500/10 transition-all duration-300"
+          <Link
+            href="/#calculator"
+            className="glass glass-high hover:glass-glow border-purple-500/25 px-5 py-2.5 rounded-full text-[10px] uppercase tracking-widest font-bold text-white hover:text-purple-300 hover:border-purple-500/40 transition-all duration-300 shadow-[0_0_15px_rgba(168,85,247,0.1)]"
           >
-            Repository
-          </a>
+            Get Premium
+          </Link>
         </div>
       </div>
     </header>
