@@ -15,8 +15,22 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://matrix-pulse-cyan.vercel.app"),
   title: "MatrixPulse - Destiny Matrix Coaching Platform",
   description: "High-performance AI-powered Destiny Matrix transformation engine and personalized coaching platform.",
+  openGraph: {
+    title: "MatrixPulse - Destiny Matrix Coaching Platform",
+    description: "High-performance AI-powered Destiny Matrix transformation engine and personalized coaching platform.",
+    url: "https://matrix-pulse-cyan.vercel.app",
+    siteName: "MatrixPulse",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MatrixPulse - Destiny Matrix Coaching Platform",
+    description: "High-performance AI-powered Destiny Matrix transformation engine and personalized coaching platform.",
+  },
 };
 
 export default function RootLayout({
