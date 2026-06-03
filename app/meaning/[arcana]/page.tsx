@@ -51,7 +51,7 @@ export default async function ArcanaHubPage({ params }: Props) {
   ];
 
   return (
-    <div className="relative min-h-[calc(100vh-8rem)] w-full flex flex-col items-center justify-center bg-[#050508] overflow-hidden px-4 pt-8 pb-16">
+    <div className="relative w-full flex flex-col items-center justify-start bg-[#050508] overflow-hidden px-4 mt-32 md:mt-40 pb-16 flex-auto">
       {/* Aurora Background */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden select-none">
         <div className="absolute top-[10%] left-[5%] w-[45vw] h-[45vw] rounded-full bg-[var(--aurora-1)] blur-[100px] opacity-40 animate-aurora-1" />
@@ -67,9 +67,9 @@ export default async function ArcanaHubPage({ params }: Props) {
             <h1 className="font-serif text-3xl md:text-5xl text-white font-medium mb-3">
               Arcana {data.number}: {data.name}
             </h1>
-            <p className="text-zinc-500 font-sans text-sm md:text-base tracking-wide max-w-md mx-auto italic">
+            <div className="text-xs tracking-widest text-white/50 uppercase border border-white/5 bg-white/5 px-3 py-1 rounded-full w-max mx-auto mt-2">
               Keywords: {data.keywords}
-            </p>
+            </div>
           </div>
 
           <div className="h-px bg-white/10 my-2" />

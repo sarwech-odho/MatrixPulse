@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 h-16 border-b border-white/5 bg-black/10 backdrop-blur-[12px]">
       <div className="flex items-center justify-between px-6 md:px-12 max-w-6xl mx-auto h-full w-full">
         {/* Left Side: Logo */}
-        <Link href="/" className="font-serif text-lg font-semibold tracking-tight text-white hover:text-purple-300 transition-colors">
+        <Link href="/" className="pl-6 lg:pl-12 font-serif text-lg font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-purple-400 drop-shadow-[0_0_12px_rgba(168,85,247,0.4)] hover:text-purple-300 transition-colors">
           MatrixPulse
         </Link>
 

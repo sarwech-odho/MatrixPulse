@@ -97,7 +97,7 @@ export default async function ArcanaZoneSpokePage({ params }: Props) {
   };
 
   return (
-    <div className="relative min-h-[calc(100vh-8rem)] w-full flex flex-col items-center justify-center bg-[#050508] overflow-hidden px-4 pt-8 pb-16">
+    <div className="relative w-full flex flex-col items-center justify-start bg-[#050508] overflow-hidden px-4 mt-32 md:mt-40 pb-16 flex-auto">
       {/* Dynamic JSON-LD injection */}
       <script
         type="application/ld+json"
@@ -133,9 +133,9 @@ export default async function ArcanaZoneSpokePage({ params }: Props) {
             <h1 className="font-serif text-3xl md:text-4xl text-white font-medium mb-2">
               Arcana {arcanaNum}: {data.name}
             </h1>
-            <p className="text-zinc-500 font-sans text-sm">
-              Core Keywords: {data.keywords}
-            </p>
+            <div className="text-xs tracking-widest text-white/50 uppercase border border-white/5 bg-white/5 px-3 py-1 rounded-full w-max mx-auto mt-2">
+              Keywords: {data.keywords}
+            </div>
           </div>
 
           <div className="h-px bg-white/10" />
