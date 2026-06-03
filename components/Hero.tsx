@@ -348,43 +348,45 @@ export default function Hero() {
 
       </div>
 
-      {/* Live Seekers Ticker (Infinite horizontal marquee) */}
-      <motion.div 
-        className="hidden sm:flex my-12 py-6 w-full overflow-hidden relative border-y border-purple-500/10 bg-black/20 select-none cursor-pointer"
-        whileHover={{ scale: 1.01 }}
-        transition={{ duration: 0.3 }}
-      >
-        <motion.div
-          animate={{ x: [0, -1000] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 30,
-            ease: "linear",
-          }}
-          className="flex whitespace-nowrap"
-        >
-          {[
-            { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
-            { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
-            { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> },
-            { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
-            { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
-            { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> },
-            { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
-            { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
-            { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> }
-          ].map((item, idx) => (
-            <div
-              key={idx}
-              className="inline-flex items-center gap-3 px-6 py-3 mx-4 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-lg shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] cursor-pointer transition-all duration-300 hover:border-purple-500/30 hover:bg-white/[0.06] group text-sm tracking-wide text-white/80"
-            >
-              <span className="text-base">{item.icon}</span>
-              <span>{item.text}</span>
-            </div>
-          ))}
-        </motion.div>
-      </motion.div>
+      {/* Live Seeker Insights Section */}
+      <div className="w-full mt-20 lg:mt-32 px-4 max-w-6xl mx-auto">
+        <p className="text-xs uppercase tracking-widest text-purple-400/80 font-semibold mb-4 pl-2">
+          Live Seeker Insights
+        </p>
+        <div className="w-full overflow-hidden relative flex">
+          <motion.div
+            animate={{ x: [0, -1000] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 30,
+              ease: "linear",
+            }}
+            className="flex whitespace-nowrap"
+            whileHover={{ scale: 1.01 }}
+          >
+            {[
+              { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
+              { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
+              { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> },
+              { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
+              { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
+              { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> },
+              { icon: '🔮', text: <>Seeker in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">Berlin</span> just unlocked Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">10</span></> },
+              { icon: '✨', text: <>Arcana <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">22</span> transition advice updated <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">4m ago</span></> },
+              { icon: '💫', text: <>New compatibility map calculated from <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold">London</span></> }
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="inline-flex items-center gap-3 py-4 px-6 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.37)] hover:border-purple-500/40 hover:bg-white/[0.05] transition-all duration-300 mx-3 select-none text-sm tracking-wide text-white/80"
+              >
+                <span className="text-base">{item.icon}</span>
+                <span>{item.text}</span>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </div>
     </div>
   );
 }
