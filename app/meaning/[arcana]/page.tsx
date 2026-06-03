@@ -60,14 +60,14 @@ export default async function ArcanaHubPage({ params }: Props) {
 
       <div className="relative z-10 w-full max-w-2xl mx-auto flex flex-col gap-8">
         <GlassCard glow={true} className="flex flex-col gap-6 text-center">
-          <div>
-            <span className="text-purple-400 font-semibold tracking-wider text-xs uppercase mb-2 block">
+          <div className="flex flex-col items-center gap-4">
+            <span className="text-purple-400 font-semibold tracking-wider text-xs uppercase">
               Destiny Profile Hub
             </span>
-            <h1 className="font-serif text-3xl md:text-5xl text-white font-medium mb-3">
+            <h1 className="font-serif text-3xl md:text-5xl text-white font-medium leading-tight">
               Arcana {data.number}: {data.name}
             </h1>
-            <div className="text-xs tracking-widest text-white/50 uppercase border border-white/5 bg-white/5 px-3 py-1 rounded-full w-max mx-auto mt-2">
+            <div className="text-xs tracking-widest text-white/50 uppercase border border-white/5 bg-white/5 px-3.5 py-1.5 rounded-full w-max">
               Keywords: {data.keywords}
             </div>
           </div>

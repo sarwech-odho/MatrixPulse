@@ -126,14 +126,14 @@ export default async function ArcanaZoneSpokePage({ params }: Props) {
 
         <GlassCard glow={true} className="flex flex-col gap-6">
           {/* Header Block */}
-          <div>
-            <span className="text-purple-400 font-semibold tracking-wider text-xs uppercase mb-2 block">
+          <div className="flex flex-col items-center gap-4 text-center">
+            <span className="text-purple-400 font-semibold tracking-wider text-xs uppercase">
               {zoneName} Optimization Guide
             </span>
-            <h1 className="font-serif text-3xl md:text-4xl text-white font-medium mb-2">
+            <h1 className="font-serif text-3xl md:text-4xl text-white font-medium leading-tight">
               Arcana {arcanaNum}: {data.name}
             </h1>
-            <div className="text-xs tracking-widest text-white/50 uppercase border border-white/5 bg-white/5 px-3 py-1 rounded-full w-max mx-auto mt-2">
+            <div className="text-xs tracking-widest text-white/50 uppercase border border-white/5 bg-white/5 px-3.5 py-1.5 rounded-full w-max">
               Keywords: {data.keywords}
             </div>
           </div>

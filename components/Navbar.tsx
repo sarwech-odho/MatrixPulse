@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <header className="relative w-full border-b border-white/5 bg-black/40 backdrop-blur-md px-8 py-4 flex items-center justify-between">
-      <div className="mx-auto max-w-7xl w-full px-4 flex items-center justify-between">
+    <header className="relative w-full border-b border-white/5 bg-black/40 backdrop-blur-md">
+      <div className="mx-auto max-w-6xl w-full px-6 py-4 flex items-center justify-between">
         {/* Left Side: Logo */}
         <Link href="/" className="font-serif text-lg font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-purple-400 drop-shadow-[0_0_12px_rgba(168,85,247,0.4)] hover:text-purple-300 transition-colors">
           MatrixPulse
