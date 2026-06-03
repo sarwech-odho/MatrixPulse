@@ -118,3 +118,13 @@ export default async function ArcanaHubPage({ params }: Props) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  const params: { arcana: string }[] = [];
+  for (let arcana = 1; arcana <= 22; arcana++) {
+    params.push({
+      arcana: arcana.toString(),
+    });
+  }
+  return params;
+}

@@ -235,3 +235,18 @@ export default async function ArcanaZoneSpokePage({ params }: Props) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  const zones = ['soul', 'spiritual', 'material', 'karma', 'comfort'];
+  const params: { arcana: string; zone: string }[] = [];
+  
+  for (let arcana = 1; arcana <= 22; arcana++) {
+    for (const zone of zones) {
+      params.push({
+        arcana: arcana.toString(),
+        zone: zone,
+      });
+    }
+  }
+  return params;
+}
