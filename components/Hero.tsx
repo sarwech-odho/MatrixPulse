@@ -347,6 +347,39 @@ export default function Hero() {
         </div>
 
       </div>
+
+      {/* Live Seekers Ticker (Infinite horizontal marquee) */}
+      <div className="hidden sm:flex w-full overflow-hidden select-none whitespace-nowrap mt-16 md:mt-24 border-t border-b border-white/5 py-4 bg-white/[0.01] backdrop-blur-sm">
+        <motion.div
+          animate={{ x: [0, -1000] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 30,
+            ease: "linear",
+          }}
+          className="flex whitespace-nowrap"
+        >
+          {[
+            '🔮 Seeker in Berlin just unlocked Arcana 10',
+            '✨ Arcana 22 transition advice updated 4m ago',
+            '💫 New compatibility map calculated from London',
+            '🔮 Seeker in Berlin just unlocked Arcana 10',
+            '✨ Arcana 22 transition advice updated 4m ago',
+            '💫 New compatibility map calculated from London',
+            '🔮 Seeker in Berlin just unlocked Arcana 10',
+            '✨ Arcana 22 transition advice updated 4m ago',
+            '💫 New compatibility map calculated from London'
+          ].map((item, idx) => (
+            <span
+              key={idx}
+              className="text-xs text-white/50 bg-white/5 border border-white/5 px-4 py-2 rounded-full backdrop-blur-md mx-2 inline-flex items-center gap-2"
+            >
+              {item}
+            </span>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 }

@@ -51,7 +51,7 @@ export default async function ArcanaHubPage({ params }: Props) {
   ];
 
   return (
-    <div className="relative w-full bg-[#050508] overflow-hidden py-12 px-4 flex flex-col items-center justify-center flex-auto">
+    <div className="relative w-full bg-[#050508] overflow-hidden pt-20 md:pt-28 pb-16 px-4 flex flex-col items-center justify-start flex-auto">
       {/* Aurora Background */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden select-none">
         <div className="absolute top-[10%] left-[5%] w-[45vw] h-[45vw] rounded-full bg-[var(--aurora-1)] blur-[100px] opacity-40 animate-aurora-1" />

@@ -97,7 +97,7 @@ export default async function ArcanaZoneSpokePage({ params }: Props) {
   };
 
   return (
-    <div className="relative w-full bg-[#050508] overflow-hidden py-12 px-4 flex flex-col items-center justify-center flex-auto">
+    <div className="relative w-full bg-[#050508] overflow-hidden pt-20 md:pt-28 pb-16 px-4 flex flex-col items-center justify-start flex-auto">
       {/* Dynamic JSON-LD injection */}
       <script
         type="application/ld+json"
