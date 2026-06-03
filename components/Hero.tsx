@@ -91,7 +91,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center justify-center bg-[#050508] overflow-hidden px-6 pt-24 pb-12 lg:pt-32 lg:pb-24">
+    <div className="relative min-h-[calc(100vh-8rem)] w-full flex flex-col items-center justify-center bg-[#050508] overflow-hidden px-6 pt-8 pb-12 lg:pb-24">
       {/* 
         Slow-Moving hardware-accelerated aurora background circles. 
         Adjusted to blur-[100px] and 0.15 opacity for an ethereal, premium feel.
